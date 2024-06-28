@@ -63,7 +63,7 @@ function New-AstroProject
         else
         {
             Write-Host "`nProject folder ($ProjectName) was not created.`nOperation cancelled...liftoff failed!"
-            Write-Host "`n`nIf using Bun, please run "bun pm cache rm" to clear the bunx cache and then try again."
+            Write-Host "`n`nIf using Bun, please run `"bun pm cache rm`" to clear the bunx cache and then try again."
         }
     }
     else
