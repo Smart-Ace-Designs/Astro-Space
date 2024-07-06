@@ -1,5 +1,5 @@
 {
-  "name": "major-tom-app",
+  "name": "astro-app",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
