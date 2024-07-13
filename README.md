@@ -7,10 +7,14 @@ npm create astro@latest -- --template smart-ace-designs/astro-space project-name
 ```
 
 ```powershell
-# Example PowerShell function to provide more granular control of deploying a new Astro project with this template using bun or npm.
-# Add to your PowerShell profile or custom PowerShell module.
+<#
+Example PowerShell function to provide more granular control of deploying a new Astro project with this template using
+bun or npm.
 
-function New-AstroProject
+Add to your PowerShell profile or custom PowerShell module.
+#>
+
+function New-AstroSpaceProject
 {
     [CmdletBinding()]
     Param
@@ -24,8 +28,8 @@ function New-AstroProject
 
     switch ($PackageManager)
     {
-        "bun" {$PMX = "bunx"}
-        "npm" {$PMX = "npx"}
+        "bun" {$PackageManagerX = "bunx"}
+        "npm" {$PackageManagerX = "npx"}
     }
 
     Clear-Host
@@ -34,10 +38,12 @@ function New-AstroProject
     Write-Host
     Write-Host ((" " * ($Width - $Message.Length)) + $Message) -ForegroundColor Green
     Write-Host ("=" * $Width)
+
     if (!(Test-Path -Path "$Location\$ProjectName"))
     {
         Set-Location $Location
-        & $PMX create-astro@latest -- --template smart-ace-designs/astro-space --typescript strict --git --no-install $ProjectName
+        & $PackageManagerX create-astro@latest -- --template smart-ace-designs/astro-space `
+            --typescript strict --git --no-install $ProjectName
 
         if (Test-Path -Path $ProjectName)
         {
@@ -52,13 +58,13 @@ function New-AstroProject
             }
 
             Write-Host
-            & $PMX @astrojs/upgrade
+            & $PackageManagerX @astrojs/upgrade
             & $PackageManager update --silent --save
             Clear-Content -Path "README.md"
 
             Write-Host
-            & $PMX prettier . --write --log-level silent
-            & $PMX prettier . --check
+            & $PackageManagerX prettier . --write --log-level silent
+            & $PackageManagerX prettier . --check
             if ($StartCode -and (Get-Command code -ErrorAction SilentlyContinue)) {code .}
             Write-Host
             Write-Host ("=" * $Width)
