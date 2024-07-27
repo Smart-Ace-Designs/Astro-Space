@@ -3,7 +3,7 @@
 An opinionated blank Astro template with built-in support for Tailwind CSS, Prettier, view transitions, and import aliases.
 
 ```sh
-npm create astro@latest -- --template smart-ace-designs/astro-space project-name
+npm create astro@latest -- --template smart-ace-designs/astro-space --typescript strict project-name
 ```
 
 ```powershell
