@@ -82,6 +82,7 @@ function New-AstroSpaceProject
     }
 }
 ```
+https://github.com/user-attachments/assets/547f884b-69f5-472f-9db7-1998aec54134
 
 ## Project Structure
 
