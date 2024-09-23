@@ -8,10 +8,10 @@ npm create astro@latest -- --template smart-ace-designs/astro-space --typescript
 
 ```powershell
 <#
-Example PowerShell function to provide more granular control of deploying a new Astro project with this template
-using bun or npm.
+Example PowerShell function to provide more granular control of deploying a new Astro project from
+this template.
 
-Add to your PowerShell profile or custom PowerShell module.
+Add this function to your PowerShell profile or a PowerShell module.
 #>
 
 function New-AstroSpaceProject
