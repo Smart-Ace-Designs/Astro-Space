@@ -58,11 +58,8 @@ function New-AstroSpaceProject
         return
     }
     
-    Set-Location $ProjectName
-    [void](New-Item -Name "components" -Path src -ItemType Directory)
-    [void](New-Item -Name "assets" -Path src -ItemType Directory)
-
     Write-Host
+    Set-Location $ProjectName
     switch ($PackageManager)
     {
         "bun" {& $PackageManager install --no-summary}
@@ -71,6 +68,9 @@ function New-AstroSpaceProject
 
     & $PackageManagerX @astrojs/upgrade
     & $PackageManager update --silent --save
+
+    [void](New-Item -Name "assets" -Path src -ItemType Directory)
+    [void](New-Item -Name "components" -Path src -ItemType Directory)
     Clear-Content -Path "README.md"
 
     Write-Host
@@ -97,6 +97,8 @@ Inside of your Astro project you will see the following folders and files:
 ├── public/
 │       └── favicon.svg
 ├── src/
+|   ├── assets/
+|   ├── components/
 |   ├── layouts/
 │       └── MainLayout.astro
 │   ├── pages/
