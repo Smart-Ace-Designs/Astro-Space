@@ -1,6 +1,6 @@
 # Astro Template: Space
 
-An opinionated blank Astro template with built-in support for Tailwind CSS, Prettier, view transitions, and import aliases.
+An opinionated Astro starter template with built-in support for Tailwind CSS, Prettier, view transitions, and import aliases.
 
 ## Deployment Methods
 ### bun
