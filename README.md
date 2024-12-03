@@ -8,11 +8,11 @@ An opinionated Astro starter template with built-in support for Tailwind CSS, Pr
 > It is recommended to install `Node.js` even if `bun` is used exclusively.
 ### bun
 ```sh
-bun create astro@latest -- --template smart-ace-designs/astro-space --typescript strict project-name
+bun create astro@latest -- --template smart-ace-designs/astro-space project-name
 ```
 ### npm
 ```sh
-npm create astro@latest -- --template smart-ace-designs/astro-space --typescript strict project-name
+npm create astro@latest -- --template smart-ace-designs/astro-space project-name
 ```
 ### PowerShell
 Add this function to your PowerShell profile or a PowerShell module:
@@ -51,7 +51,7 @@ function New-AstroSpaceProject
 
     Set-Location $Location
     & $PackageManagerX create-astro@latest -- --template smart-ace-designs/astro-space `
-        --typescript strict --git --no-install $ProjectName
+        --git --no-install $ProjectName
 
     if (!(Test-Path -Path $ProjectName))
     {
@@ -106,7 +106,6 @@ Inside of your Astro project you will see the following folders and files:
 │       └── index.astro
 |   ├── styles/
 │       └── styles.css
-|   └── env.d.ts
 ├── .gitignore
 ├── .prettierrc.mjs
 ├── astro.config.mjs
