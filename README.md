@@ -85,7 +85,7 @@ function New-AstroSpaceProject
     if ($StartApp) {& $PackageManager run dev}
 }
 ```
-https://github.com/user-attachments/assets/547f884b-69f5-472f-9db7-1998aec54134
+https://github.com/user-attachments/assets/1d6ac9dd-67ac-4849-9c07-5cd07ef84ec1
 
 ## Project Structure
 
