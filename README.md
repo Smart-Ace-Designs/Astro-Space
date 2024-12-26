@@ -1,6 +1,26 @@
 # Astro Template: Space
 
-An opinionated Astro starter template with built-in support for Tailwind CSS, Prettier, view transitions, and import aliases.
+**Space** is an opinionated Astro starter template with built-in support for Tailwind CSS, Prettier, view transitions, and import aliases.
+
+Using `bunx create-astro@latest` or `npm create astro@latest` provides everything you need to create a basic Astro application. However, it is missing a few useful items that I found myself manually adding to every Astro project I created.  To address this problem, I created this template to automatically include these items. Additionally, a custom PowerShell function was created to deploy this template and provide some additional functionality that the template cannot.
+
+The template includes:
+- Tailwind CSS
+- Prettier
+- Astro [View Transitions](https://docs.astro.build/en/guides/view-transitions/)
+- Astro [Import Aliases](https://docs.astro.build/en/guides/typescript/#import-aliases)
+- A default `MainLayout.astro` layout file
+- A default `global.css` file
+- Default `.vscode` files to properly handle Tailwind CSS, recommended extensions, and default Prettier formatters
+- A blank `index.astro` page
+
+The PowerShell function:
+- Creates additional empty folders: `Assets` and `Components`
+- Blanks out the `README.md` file
+- Runs `astro update` to update the core Astro packages to the latest versions and your preferred package manager (npm or bun) to update the other non-Astro core packages
+- Run the `prettier` CLI to provide an intial format of all project files
+- Automatically navigates to the project folder and peforms an initial install
+- Provides an option to launch the site post deployment and/or launch the project folder with VS Code
 
 ## Deployment Methods
 > Note:  
