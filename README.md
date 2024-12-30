@@ -12,7 +12,7 @@ The template includes:
 - A default `MainLayout.astro` layout file
 - A default `global.css` file
 - Default `.vscode` files to properly handle Tailwind CSS, recommended extensions, and default Prettier formatters
-- A blank `index.astro` page
+- A blank `index.astro` page (empty "space")
 
 The PowerShell function:
 - Creates additional empty folders: `Assets` and `Components`
@@ -24,8 +24,7 @@ The PowerShell function:
 
 ## Deployment Methods
 > Note:  
-> At this time using `bun create` is dependent on `npm` being present in the path.  
-> It is recommended to install `Node.js` even if `bun` is used exclusively.
+> Using `bun create` is dependent on `npm` being present in the path. It is recommended to install `Node.js` even if `bun` is used exclusively.
 ### bun
 ```sh
 bun create astro@latest -- --template smart-ace-designs/astro-space project-name
