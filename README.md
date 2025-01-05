@@ -15,7 +15,7 @@ The template includes:
 - A blank `index.astro` page (empty "space")
 
 The PowerShell function:
-- Creates additional empty folders: `Assets` and `Components`
+- Creates additional empty folders: `assets` and `components`
 - Blanks out the `README.md` file
 - Runs `astro update` to update the core Astro packages to the latest versions and runs your preferred package manager (npm or bun) to update the other packages
 - Runs the `prettier` CLI to provide an intial format of all project files
