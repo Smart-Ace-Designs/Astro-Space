@@ -36,15 +36,16 @@ npm create astro@latest -- --template smart-ace-designs/astro-space project-name
 ### PowerShell
 Add this function to your PowerShell profile or a PowerShell module:
 ```powershell
-function New-AstroSpaceProject
+function New-AstroProject
 {
     [CmdletBinding()]
     Param
     (
         [Parameter(Mandatory = $true)] [string]$ProjectName,
         [Parameter(Mandatory = $true)] [string]$Location,
-        [Parameter(Mandatory = $false)] [switch]$StartCode,
+        [Parameter(Mandatory = $true)] [ValidateSet("astro-major-tom", "astro-moonbase", "astro-space")] [string]$Template,
         [Parameter(Mandatory = $false)] [switch]$StartApp,
+        [Parameter(Mandatory = $false)] [switch]$StartCode,
         [Parameter(Mandatory = $false)] [ValidateSet("bun", "npm")] [string]$PackageManager = "bun"
     )
 
@@ -69,7 +70,7 @@ function New-AstroSpaceProject
     }
 
     Set-Location $Location
-    & $PackageManagerX create-astro@latest -- --template smart-ace-designs/astro-space `
+    & $PackageManagerX create-astro@latest -- --template smart-ace-designs/$($Template) `
         --git --no-install $ProjectName
 
     if (!(Test-Path -Path $ProjectName))
@@ -91,8 +92,8 @@ function New-AstroSpaceProject
     & $PackageManagerX @astrojs/upgrade
     & $PackageManager update --silent --save
 
-    [void](New-Item -Name "assets" -Path src -ItemType Directory)
-    [void](New-Item -Name "components" -Path src -ItemType Directory)
+    if (!(Test-Path -Path "src/components")) {[void](New-Item -Name "components" -Path src -ItemType Directory)}
+    if (!(Test-Path -Path "src/assets")) {[void](New-Item -Name "assets" -Path src -ItemType Directory)}
     Clear-Content -Path "README.md"
 
     Write-Host
@@ -104,6 +105,11 @@ function New-AstroSpaceProject
     if ($StartApp) {& $PackageManager run dev}
 }
 ```
+
+```sh
+New-AstroProject -ProjectName project-name -Location project-parent-folder -Template astro-space
+```
+
 https://github.com/user-attachments/assets/1d6ac9dd-67ac-4849-9c07-5cd07ef84ec1
 
 ## Project Structure
@@ -134,7 +140,7 @@ Inside of your Astro project you will see the following folders and files:
 └── tsconfig.json
 ```
 
-When deployed with the custom `New-AstroSpaceProject` PowerShell function, you will see the following folders and files:
+When deployed with the custom `New-AstroProject` PowerShell function, you will see the following folders and files:
 
 ```text
 /
