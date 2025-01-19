@@ -32,6 +32,9 @@ bun create astro@latest -- --template smart-ace-designs/astro-space project-name
 ### npm
 ```sh
 npx create-astro@latest -- --template smart-ace-designs/astro-space project-name
+
+# If using Windows PowerShell, the following will also work:
+# npm create astro@latest --- --template smart-ace-designs/astro-space project-name
 ```
 ### PowerShell
 Add this function to your PowerShell profile or a PowerShell module:
