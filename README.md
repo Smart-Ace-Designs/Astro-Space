@@ -9,16 +9,18 @@ The template includes:
 - [Prettier](https://prettier.io/)
 - Astro [View Transitions](https://docs.astro.build/en/guides/view-transitions/)
 - Astro [Import Aliases](https://docs.astro.build/en/guides/typescript/#import-aliases)
-- A default `MainLayout.astro` layout file
-- A default `global.css` file
-- Default `.vscode` files to properly handle Tailwind CSS, recommended extensions, and default Prettier formatters
-- A blank `index.astro` page (empty "space")
+- A default _MainLayout.astro_ layout file
+- A default _global.css_ file
+- Default _.vscode_ files to properly handle Tailwind CSS, recommended extensions, and default Prettier formatters
+- A blank _index.astro_ page (empty "space")
+- Changes the `dev` script to `"astro dev --open"`
 
 The PowerShell function:
-- Creates additional empty folders: `assets` and `components`
-- Blanks out the `README.md` file
+- Creates additional empty folders: _assets_ and _components_
+- Blanks out the _README.md_ file
 - Runs `astro update` to update the core Astro packages to the latest versions and runs your preferred package manager (npm or bun) to update the other packages
 - Runs the `prettier` CLI to provide an intial format of all project files
+- Initializes a _Git_ repository
 - Automatically navigates to the project folder and peforms an initial install
 - Provides an option to launch the site and/or open the project folder with VS Code post deployment
 
