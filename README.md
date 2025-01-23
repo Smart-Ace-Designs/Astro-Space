@@ -25,7 +25,6 @@ The PowerShell function:
 - Provides an option to launch the site and/or open the project folder with VS Code post deployment
 
 ## Deployment Methods
-> Note:  
 > Using `bunx create-astro@latest` is dependent on __npm__ being present in the path. It is recommended to install __Node.js__ even if __Bun__ is used exclusively.
 ### bun
 ```sh
