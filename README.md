@@ -112,7 +112,7 @@ function New-AstroProject
 ```sh
 New-AstroProject -ProjectName project-name -Location project-parent-folder -Template astro-space
 ```
-https://github.com/user-attachments/assets/afb6eded-072d-4f42-9208-fbc66f529c34
+https://github.com/user-attachments/assets/25b1e4da-28fb-45de-8f5d-77ea6c827dcf
 
 ## Project Structure
 
