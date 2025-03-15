@@ -122,7 +122,7 @@ function New-AstroProject
 ```
 
 ```sh
-New-AstroProject -ProjectName project-name -Location project-parent-folder -Template astro-space
+New-AstroProject -ProjectName project-name -Location parent-folder -Template astro-space
 ```
 https://github.com/user-attachments/assets/25b1e4da-28fb-45de-8f5d-77ea6c827dcf
 
