@@ -97,3 +97,5 @@ When deployed with the custom `New-AstroProject` PowerShell function, you will s
 ├── README.md
 └── tsconfig.json
 ```
+
+npm run dev
