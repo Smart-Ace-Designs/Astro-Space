@@ -27,7 +27,7 @@ The PowerShell function:
 ## Deployment Methods
 ### bun
 ```sh
-bunx create-astro@4.11.1 -- --template smart-ace-designs/astro-space project-name
+bunx create-astro@latest -- --template smart-ace-designs/astro-space project-name
 ```
 ### npm
 ```sh
