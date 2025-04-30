@@ -15,7 +15,7 @@ The template includes:
 - A blank _index.astro_ page
 - The `dev` script set to `"astro dev --open"`
 
-The PowerShell function:
+An optional [PowerShell function](https://github.com/Smart-Ace-Designs/SmartAceDesigns.AstroLiftoff) (standalone or as part of a PowerShell module) is available to deploy the above template and provide the following additional functionality:
 - Creates additional empty folders: _assets_ and _components_
 - Blanks out the _README.md_ file
 - Runs the `prettier` CLI to provide an intial format of all project files
