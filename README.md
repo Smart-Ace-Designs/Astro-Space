@@ -1,20 +1,18 @@
 # Astro Template: Space
-
 Astro **Space** is an opinionated Astro 5 starter template with built-in support for Tailwind CSS, Prettier, view transitions, and import aliases and includes a blank default "index.astro" page.
 
-Using `create-astro@latest` provides everything you need to create a basic Astro application. However, it is missing a few useful items that I found myself manually adding to every Astro project I created.  To address this problem, I created this template to automatically include these items. Additionally, a custom [PowerShell function](https://github.com/Smart-Ace-Designs/SmartAceDesigns.AstroLiftoff) (also available in a PowerShell module) was created to deploy this template and provide additional functionality that the template cannot.
-
-This provides a great starting point for a brand new Astro project with Tailwind.
+Using `create-astro@latest` provides everything you need to create a basic Astro application. However, it is missing a few useful items that you might find yourself manually adding to every new Astro project. The **Space** template was created to automatically include these items. This provides a great starting point for a new Astro project with Tailwind.
 
 The template includes:
-- [Tailwind CSS v4.1](https://tailwindcss.com/)
-- [Prettier](https://prettier.io/)
+- An initial Astro project structure
 - Astro [View Transitions](https://docs.astro.build/en/guides/view-transitions/)
 - Astro [Import Aliases](https://docs.astro.build/en/guides/typescript/#import-aliases)
+- [Tailwind CSS v4.1](https://tailwindcss.com/)
+- [Prettier](https://prettier.io/)
 - A default _MainLayout.astro_ layout file
 - A default _global.css_ file
 - Default _.vscode_ files to properly handle Tailwind CSS, recommended extensions, and default Prettier formatters
-- A blank _index.astro_ page (empty "space")
+- A blank _index.astro_ page
 - The `dev` script set to `"astro dev --open"`
 
 The PowerShell function:
@@ -44,18 +42,17 @@ pnpm create astro@latest --template smart-ace-designs/astro-space project-name
 yarn create astro@latest --template smart-ace-designs/astro-space project-name
 ```
 ### PowerShell
-A PowerShell module or a standalone function is available here:
+The optional PowerShell function and module are available here:
 [SmartAceDesigns.AstroLiftoff](https://github.com/Smart-Ace-Designs/SmartAceDesigns.AstroLiftoff)
 
 ```sh
-New-AstroProject -ProjectName project-name -Location parent-folder -Template astro-space
+New-AstroProject -ProjectName project-name -Location parent-directory -Template astro-space
 ```
 
 https://github.com/user-attachments/assets/25b1e4da-28fb-45de-8f5d-77ea6c827dcf
 
 ## Project Structure
-
-Inside of your Astro project you will see the following folders and files:
+After deploying the Astro **Space** template you will see the following files and directories in your project root:
 
 ```text
 /
@@ -80,29 +77,11 @@ Inside of your Astro project you will see the following folders and files:
 └── tsconfig.json
 ```
 
-When deployed with the custom `New-AstroProject` PowerShell function, you will see the following folders and files:
+The optional `New-AstroProject` PowerShell function will add these additional directories to your project root:
 
 ```text
 /
-├── .vscode/
-│       └── extensions.json
-│       └── launch.json
-│       └── settings.json
-├── public/
-│       └── favicon.svg
-├── src/
-|   ├── assets/
-|   ├── components/
-|   ├── layouts/
-│       └── MainLayout.astro
-│   ├── pages/
-│       └── index.astro
-|   ├── styles/
-│       └── global.css
-├── .gitignore
-├── .prettierrc.mjs
-├── astro.config.mjs
-├── package.json
-├── README.md
-└── tsconfig.json
+└── src/
+    ├── assets/
+    └── components/
 ```
