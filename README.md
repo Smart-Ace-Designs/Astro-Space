@@ -1,8 +1,10 @@
 # Astro Template: Space
 
-Astro **Space** is an opinionated Astro 5 starter template with built-in support for Tailwind CSS, Prettier, view transitions, and import aliases. It includes a blank default "index.astro" page - ideal for starting a brand new Astro project.
+Astro **Space** is an opinionated Astro 5 starter template with built-in support for Tailwind CSS, Prettier, view transitions, and import aliases and includes a blank default "index.astro" page.
 
 Using `create-astro@latest` provides everything you need to create a basic Astro application. However, it is missing a few useful items that I found myself manually adding to every Astro project I created.  To address this problem, I created this template to automatically include these items. Additionally, a custom [PowerShell function](https://github.com/Smart-Ace-Designs/SmartAceDesigns.AstroLiftoff) (also available in a PowerShell module) was created to deploy this template and provide additional functionality that the template cannot.
+
+This provides a great starting point for a brand new Astro project with Tailwind.
 
 The template includes:
 - [Tailwind CSS v4.1](https://tailwindcss.com/)
