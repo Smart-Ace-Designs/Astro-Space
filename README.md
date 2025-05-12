@@ -63,11 +63,11 @@ After deploying the Astro **Space** template you will see the following files an
 ├── public/
 │   └── favicon.svg
 ├── src/
-|   ├── layouts/
+│   ├── layouts/
 │   │   └── MainLayout.astro
 │   ├── pages/
 │   │   └── index.astro
-|   └── styles/
+│   └── styles/
 │       └── global.css
 ├── .gitignore
 ├── .prettierrc.mjs
