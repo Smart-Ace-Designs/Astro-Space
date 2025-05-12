@@ -57,17 +57,17 @@ After deploying the Astro **Space** template you will see the following files an
 ```text
 /
 ├── .vscode/
-│       └── extensions.json
-│       └── launch.json
-│       └── settings.json
+│   ├── extensions.json
+│   ├── launch.json
+│   └── settings.json
 ├── public/
-│       └── favicon.svg
+│   └── favicon.svg
 ├── src/
 |   ├── layouts/
-│       └── MainLayout.astro
+│   │   └── MainLayout.astro
 │   ├── pages/
-│       └── index.astro
-|   ├── styles/
+│   │   └── index.astro
+|   └── styles/
 │       └── global.css
 ├── .gitignore
 ├── .prettierrc.mjs
