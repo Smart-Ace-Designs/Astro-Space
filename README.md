@@ -49,7 +49,7 @@ The optional PowerShell function and module are available here:
 New-AstroProject -ProjectName project-name -Location parent-directory -Template astro-space
 ```
 
-https://github.com/user-attachments/assets/25b1e4da-28fb-45de-8f5d-77ea6c827dcf
+https://github.com/user-attachments/assets/1bc7a552-356b-4a76-8db0-0ab599639976
 
 ## Project Structure
 After deploying the Astro **Space** template you will see the following files and directories in your project root:
