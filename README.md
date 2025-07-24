@@ -1,3 +1,4 @@
+<!-- ASTRO:REMOVE:START -->
 # Astro Template: Space
 Astro **Space** is an opinionated Astro 5 starter template with built-in support for Tailwind CSS, Prettier, view transitions, and import aliases and includes a blank default "index.astro" page.
 
@@ -85,3 +86,4 @@ The optional `New-AstroProject` PowerShell function will add these additional di
     ├── assets/
     └── components/
 ```
+<!-- ASTRO:REMOVE:END -->
