@@ -1,10 +1,13 @@
 <!-- ASTRO:REMOVE:START -->
+
 # Astro Template: Space
+
 Astro **Space** is an opinionated Astro 5 starter template with built-in support for Tailwind CSS, Prettier, view transitions, and aliases.
 
 Using `create astro@latest` provides everything you need to create a basic Astro 5 application. However, it is missing a few useful items that you might find yourself manually adding to every new Astro project. The **Space** template was created to automatically include these items. This provides a great starting point for a new Astro 5 project with Tailwind.
 
 The template includes:
+
 - An initial Astro project structure
 - Astro [View Transitions](https://docs.astro.build/en/guides/view-transitions/)
 - Astro [Aliases](https://docs.astro.build/en/guides/imports/#aliases)
@@ -17,6 +20,7 @@ The template includes:
 - The `dev` script set to `"astro dev --open"`
 
 An optional [PowerShell function](https://github.com/Smart-Ace-Designs/SmartAceDesigns.AstroLiftoff) (standalone or as part of a PowerShell module) is available to deploy the above template and provide the following additional functionality:
+
 - Creates additional empty folders: _assets_ and _components_
 - Runs the `prettier` CLI to provide an intial format of all project files
 - Initializes a _Git_ repository
@@ -25,23 +29,33 @@ An optional [PowerShell function](https://github.com/Smart-Ace-Designs/SmartAceD
 - Provides an option to launch the site and/or open the project folder with VS Code post deployment
 
 ## Deployment Methods
+
 ### npm
+
 ```sh
 npm create astro@latest -- --template smart-ace-designs/astro-space project-name
 ```
+
 ### bun
+
 ```sh
 bun create astro@latest -- --template smart-ace-designs/astro-space project-name
 ```
+
 ### pnpm
+
 ```sh
 pnpm create astro@latest --template smart-ace-designs/astro-space project-name
 ```
+
 ### yarn
+
 ```sh
 yarn create astro@latest --template smart-ace-designs/astro-space project-name
 ```
+
 ### PowerShell
+
 The optional PowerShell function and module are available here:
 [SmartAceDesigns.AstroLiftoff](https://github.com/Smart-Ace-Designs/SmartAceDesigns.AstroLiftoff)
 
@@ -52,6 +66,7 @@ New-AstroProject -ProjectName project-name -Location parent-directory -Template 
 https://github.com/user-attachments/assets/1bc7a552-356b-4a76-8db0-0ab599639976
 
 ## Project Structure
+
 After deploying the Astro **Space** template you will see the following files and directories in your project root:
 
 ```text
@@ -85,4 +100,5 @@ The optional `New-AstroProject` PowerShell function will add these additional di
     ├── assets/
     └── components/
 ```
+
 <!-- ASTRO:REMOVE:END -->
