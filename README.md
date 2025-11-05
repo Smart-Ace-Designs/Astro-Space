@@ -85,6 +85,7 @@ After deploying the Astro **Space** template you will see the following files an
 │   └── styles/
 │       └── global.css
 ├── .gitignore
+├── .prettierignore
 ├── .prettierrc.mjs
 ├── astro.config.mjs
 ├── package.json
