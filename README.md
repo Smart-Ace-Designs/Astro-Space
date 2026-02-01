@@ -63,7 +63,7 @@ The optional PowerShell function and module are available here:
 New-AstroProject -ProjectName project-name -Location parent-directory -Template astro-space
 ```
 
-https://github.com/user-attachments/assets/1bc7a552-356b-4a76-8db0-0ab599639976
+https://github.com/user-attachments/assets/2f64b212-4590-4809-b232-f8d748c19ab6
 
 ## Project Structure
 
