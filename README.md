@@ -2,16 +2,16 @@
 
 # Astro Template: Space
 
-Astro **Space** is an opinionated Astro 5 starter template with built-in support for Tailwind CSS, Prettier, view transitions, and aliases.
+Astro **Space** is an opinionated Astro 6 starter template with built-in support for Tailwind CSS, Prettier, view transitions, and aliases.
 
-Using `create astro@latest` provides everything you need to create a basic Astro 5 application. However, it is missing a few useful items that you might find yourself manually adding to every new Astro project. The **Space** template was created to automatically include these items. This provides a great starting point for a new Astro 5 project with Tailwind.
+Using `create astro@latest` provides everything you need to create a basic Astro 6 application. However, it is missing a few useful items that you might find yourself manually adding to every new Astro 6 project. The **Space** template was created to automatically include these items. This provides a great starting point for a new Astro 6 project with Tailwind.
 
 The template includes:
 
-- An initial Astro project structure
+- An initial Astro 6 project structure
 - Astro [View Transitions](https://docs.astro.build/en/guides/view-transitions/)
 - Astro [Aliases](https://docs.astro.build/en/guides/imports/#aliases)
-- [Tailwind CSS v4.1](https://tailwindcss.com/)
+- [Tailwind CSS v4.2](https://tailwindcss.com/)
 - [Prettier](https://prettier.io/)
 - A default _MainLayout.astro_ layout file
 - A default _global.css_ file
@@ -82,8 +82,9 @@ After deploying the Astro **Space** template you will see the following files an
 │   │   └── MainLayout.astro
 │   ├── pages/
 │   │   └── index.astro
-│   └── styles/
-│       └── global.css
+│   ├── styles/
+│   │   └── global.css
+│   └── content.config.ts
 ├── .gitignore
 ├── .prettierignore
 ├── .prettierrc.mjs
