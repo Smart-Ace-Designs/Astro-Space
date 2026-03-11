@@ -39,7 +39,7 @@ npm create astro@latest -- --template smart-ace-designs/astro-space project-name
 ### bun
 
 ```sh
-bun create astro@latest -- --template smart-ace-designs/astro-space project-name
+bun --bun create astro@latest -- --template smart-ace-designs/astro-space project-name
 ```
 
 ### pnpm
