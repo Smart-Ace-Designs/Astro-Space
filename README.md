@@ -76,6 +76,7 @@ After deploying the Astro **Space** template you will see the following files an
 │   ├── launch.json
 │   └── settings.json
 ├── public/
+│   ├── favicon.ico
 │   └── favicon.svg
 ├── src/
 │   ├── layouts/
