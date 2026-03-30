@@ -38,9 +38,6 @@ npm create astro@latest -- --template smart-ace-designs/astro-space project-name
 
 ### bun
 
-> [!note]
-> As of `create-astro@5.0.4` **bun** is no longer supported.
-
 ```sh
 bun create astro@latest -- --template smart-ace-designs/astro-space project-name
 ```
