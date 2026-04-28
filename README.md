@@ -83,9 +83,8 @@ After deploying the Astro **Space** template you will see the following files an
 │   │   └── MainLayout.astro
 │   ├── pages/
 │   │   └── index.astro
-│   ├── styles/
-│   │   └── global.css
-│   └── content.config.ts
+│   └── styles/
+│       └── global.css
 ├── .gitignore
 ├── .prettierignore
 ├── .prettierrc.mjs
