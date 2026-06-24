@@ -21,6 +21,9 @@ The template includes:
 
 ## Deployment Methods
 
+>[!note]
+>The `AGENTS.md` and `CLAUDE.md` files are created automatically by the `create astro@latest` npm initializer. Use the `--no-ai` flag to opt out of creating these files.
+
 ### npm
 
 ```sh
@@ -68,15 +71,10 @@ After deploying the Astro **Space** template you will see the following files an
 ├── .gitignore
 ├── .prettierignore
 ├── .prettierrc.mjs
-├── AGENTS.md
 ├── astro.config.mjs
-├── CLAUDE.md
 ├── package.json
 ├── README.md
 └── tsconfig.json
 ```
-
->[!note]
->The `AGENTS.md` and `CLAUDE.md` files are created automatically by the `create astro@latest` npm initializer and are not part of this template. Use the `--no-ai` flag to opt out of these files.
 
 <!-- ASTRO:REMOVE:END -->
