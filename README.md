@@ -4,7 +4,7 @@
 
 Astro **Space** is an opinionated [Astro 7](https://astro.build/) starter template with built-in support for Tailwind CSS 4, Prettier, view transitions, and aliases.
 
-Using `create astro@latest` provides everything you need to create a basic Astro 7 application. However, it is missing a few useful items that you might find yourself manually adding to every new Astro 7 project. The **Space** template was created to automatically include these items. This provides a great starting point for a new Astro 7 project with Tailwind 4.
+Using `create astro@latest` provides everything you need to create a basic Astro 7 application. However, it is missing a few useful items that you might find yourself manually adding to every new Astro 7 project. The **Space** template was created to automatically include these items. This provides a great starting point for a new Astro 7 project with Tailwind CSS 4.
 
 The template includes:
 
