@@ -70,7 +70,6 @@ After deploying the Astro **Space** template you will see the following files an
 ├── .prettierrc.mjs
 ├── AGENTS.md
 ├── astro.config.mjs
-├── CLAUDE.md
 ├── package.json
 ├── README.md
 └── tsconfig.json
