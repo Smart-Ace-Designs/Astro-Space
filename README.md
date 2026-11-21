@@ -68,10 +68,10 @@ After deploying the Astro **Space** template you will see the following files an
 │       └── global.css
 ├── .gitignore
 ├── .prettierignore
-├── .prettierrc.mjs
 ├── AGENTS.md
 ├── astro.config.mjs
 ├── package.json
+├── prettier.config.ts
 ├── README.md
 └── tsconfig.json
 ```
